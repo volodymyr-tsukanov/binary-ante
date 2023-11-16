@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1700169905 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\src\deck.cpp
+	"Deck.h"
+
+1700169844 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\deck.h
+	<iostream>
+	<ctime>
+
+1700169929 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\main.cpp
+	<iostream>
+	"Deck.h"
+
