@@ -2,30 +2,18 @@
 #define DECK_H
 
 #include <iostream>
-#include <cmath>
-#include <ctime>
+#include "binary.h"
 
 
 class Deck
 {
-public:
-    const static int ZERO = 0, ONE = 1, NONE = -1;
-    enum Type { b8=8, b12=12, b16=16 };
-
 private:
-    Type type;
-    int deck;
-    int top;
-
-protected:
-    int randRange(int min, int max);
-
-    void fillDeck();
+    binary deck;
+    binary top;
 
 public:
-    Deck(Type type);
-
-    std::string toBinary(int number);
+    Deck(BinaryType type);
+    ~Deck();
 
     void print();
 };

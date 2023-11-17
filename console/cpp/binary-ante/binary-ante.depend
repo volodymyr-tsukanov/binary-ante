@@ -2,12 +2,19 @@
 1700169905 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\src\deck.cpp
 	"Deck.h"
 
-1700211620 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\deck.h
+1700214555 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\deck.h
 	<iostream>
-	<cmath>
-	<ctime>
+	"binary.h"
 
-1700211624 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\main.cpp
+1700213608 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\main.cpp
 	<iostream>
 	"Deck.h"
+	"binary.h"
+
+1700214512 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\binary.h
+	<iostream>
+	<cmath>
+
+1700214539 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\src\binary.cpp
+	"binary.h"
 
