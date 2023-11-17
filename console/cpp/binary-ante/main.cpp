@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    Deck deck = Deck(10);
+    Deck deck = Deck(Deck::b8);
     deck.print();
 
     return 0;
