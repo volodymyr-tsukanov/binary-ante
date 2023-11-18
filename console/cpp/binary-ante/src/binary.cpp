@@ -3,6 +3,10 @@
 using namespace std;
 
 
+/*binary::binary(){
+    type = bin8;
+    setValue(0);
+}*/
 binary::binary(BinaryType type, int dec){
     this->type = type;
     setValue(dec);

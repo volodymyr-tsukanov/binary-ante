@@ -35,8 +35,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Deck.h" />
+		<Unit filename="include/binary.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Deck.cpp" />
+		<Unit filename="src/binary.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
