@@ -1,20 +1,24 @@
 # depslib dependency file v1.0
-1700301336 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\src\deck.cpp
+1700327499 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\src\deck.cpp
 	"Deck.h"
 
-1700214555 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\deck.h
+1700326929 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\deck.h
 	<iostream>
-	"binary.h"
+	"Binary.h"
+	"BinaryType.h"
 
-1700214582 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\main.cpp
+1700326642 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\main.cpp
 	<iostream>
 	"Deck.h"
-	"binary.h"
+	"Binary.h"
 
-1700301711 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\binary.h
+1700327599 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\binary.h
 	<iostream>
 	<cmath>
+	"BinaryType.h"
 
-1700300122 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\src\binary.cpp
-	"binary.h"
+1700327545 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\src\binary.cpp
+	"Binary.h"
+
+1700327400 c:\users\vladimr\desktop\git\binary-ante\console\cpp\binary-ante\include\binarytype.h
 

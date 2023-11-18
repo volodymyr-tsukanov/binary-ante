@@ -2,17 +2,18 @@
 #define DECK_H
 
 #include <iostream>
-#include "binary.h"
+#include "Binary.h"
+#include "BinaryType.h"
 
 
 class Deck
 {
 private:
-    binary deck;
-    binary top;
+    binary::Binary deck;
+    binary::Binary top;
 
 public:
-    Deck(BinaryType type);
+    Deck(binary::BinaryType type);
     ~Deck();
 
     void print();

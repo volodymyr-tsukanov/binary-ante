@@ -1,14 +1,14 @@
 #include "Deck.h"
 
 using namespace std;
+using namespace binary;
 
 
 Deck::Deck(BinaryType type){
-    deck = binary(type);
-    top = binary(type-1);
+    deck = Binary(type);
+    top = Binary((BinaryType)((int)(type)-1));
 }
-Deck::~Deck(){
-}
+Deck::~Deck(){}
 
 
 void Deck::print(){

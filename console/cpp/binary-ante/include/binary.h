@@ -3,12 +3,12 @@
 
 #include <iostream>
 #include <cmath>
+#include "BinaryType.h"
 
 
-enum BinaryType { bin4=4, bin8=8, bin12=12, bin16=16, bin20=20, bin24=24, bin28=28, bin32=32 };
-
-
-class binary
+namespace binary
+{
+class Binary
 {
 private:
     BinaryType type;
@@ -18,11 +18,11 @@ protected:
     randRange(int min, int max);
 
 public:
-    binary();
-    binary(BinaryType type, int dec);
-    binary(int dec);
-    binary(BinaryType type);
-    ~binary();
+    Binary();
+    Binary(BinaryType type, int dec);
+    Binary(int dec);
+    Binary(BinaryType type);
+    ~Binary();
 
     void setType(BinaryType type);
     void setValue(int dec);
@@ -30,5 +30,6 @@ public:
     int toDec();
     std::string toString();
 };
+}
 
 #endif // BINARY_H

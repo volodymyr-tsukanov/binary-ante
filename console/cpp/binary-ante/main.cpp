@@ -1,8 +1,9 @@
 #include <iostream>
 #include "Deck.h"
-#include "binary.h"
+#include "Binary.h"
 
 using namespace std;
+using namespace binary;
 
 
 int main()

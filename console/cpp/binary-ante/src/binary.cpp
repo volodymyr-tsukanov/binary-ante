@@ -1,35 +1,32 @@
-#include "binary.h"
+#include "Binary.h"
 
+using namespace binary;
 using namespace std;
 
 
-/*binary::binary(){
-    type = bin8;
-    setValue(0);
-}*/
-binary::binary(BinaryType type, int dec){
+Binary::Binary(BinaryType type, int dec){
     this->type = type;
     setValue(dec);
 }
-binary::binary(int dec){
-    type = bin16;
+Binary::Binary(int dec){
+    type = BinaryType::bin8;
     setValue(dec);
 }
-binary::binary(BinaryType type){
+Binary::Binary(BinaryType type){
     this->type = type;
     setValue(randRange(0, pow(2, (int)type)));
 }
 
 
-int binary::randRange(int min, int max){
+int Binary::randRange(int min, int max){
     return min + (rand() % (max+1));
 }
 
 
-void binary::setType(BinaryType type){
+void Binary::setType(BinaryType type){
     this->type = type;
 }
-void binary::setValue(int dec){
+void Binary::setValue(int dec){
     int max = pow(2, (int)type);
     if(dec < max){
         value = dec;
@@ -37,11 +34,11 @@ void binary::setValue(int dec){
 }
 
 
-int binary::toDec(){
+int Binary::toDec(){
     return value;
 }
 
-string binary::toString(){
+string Binary::toString(){
     string sBin = "";
 
     int number = value;
