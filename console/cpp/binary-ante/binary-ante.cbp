@@ -34,11 +34,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Binary.h" />
+		<Unit filename="include/BinaryType.h" />
 		<Unit filename="include/Deck.h" />
-		<Unit filename="include/binary.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Binary.cpp" />
 		<Unit filename="src/Deck.cpp" />
-		<Unit filename="src/binary.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

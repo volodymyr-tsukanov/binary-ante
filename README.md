@@ -1,4 +1,4 @@
-# Binante console
+# _Binante_ console
 Simple game ; C++</br></br>
 
 
