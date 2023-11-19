@@ -1,4 +1,4 @@
-# binary-ante
+# Binante
 Simple game</br></br>
 
 
