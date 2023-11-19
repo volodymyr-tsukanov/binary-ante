@@ -1,5 +1,5 @@
 # Binante
-Simple game ; C# ; MonoDevelop</br></br>
+Simple game</br></br>
 
 
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
