@@ -7,8 +7,51 @@ namespace binary_ante
 
 	public class Binary
 	{
-		public Binary ()
-		{
+		private BinaryType Type;
+		private int Value;
+
+
+		public Binary(){
+			Type = BinaryType.bin8;
+			SetValue(randRange(0, (int)Math.Pow(2, (int)Type)));
+		}
+		public Binary(BinaryType type){
+			this.Type = type;
+			SetValue(randRange(0, (int)Math.Pow(2, (int)type)));
+		}
+		public Binary(BinaryType type, int decValue){
+			this.Type = type;
+			SetValue(decValue);
+		}
+
+
+		public void SetValue(int decValue){
+			int max = (int)Math.Pow(2, (int)Type);
+			if(decValue < max){
+				Value = decValue;
+			} else Value = decValue % (max-1);
+		}
+
+
+		int RandRange(int min, int max){
+			return new Random().Next(min, max);
+		}
+
+		public int ToDec(){
+			return Value;
+		}
+		override public string ToString(){
+			string s = "";
+
+			int num = Value;
+			while (num >= 1) {
+				s = (num % 2).ToString() + s;
+				num /= 2;
+			}
+			while (s.Length < (int) Type)
+				s = "0" + s;
+
+			return s;
 		}
 	}
 }
