@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace binary_ante
+namespace binaryAnte
 {
 	class MainClass
 	{
