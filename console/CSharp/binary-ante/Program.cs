@@ -1,6 +1,7 @@
 ﻿using System;
+using VT.Types.Binary;
 
-namespace binaryAnte
+namespace VT.BinaryAnte
 {
 	class MainClass
 	{
