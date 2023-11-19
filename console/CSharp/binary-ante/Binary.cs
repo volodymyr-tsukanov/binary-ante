@@ -36,12 +36,28 @@ namespace binary_ante
 		}
 
 		public static Binary operator+(Binary lhs, Binary rhs){
-			Binary result = new Binary(lhs.Value + rhs.Value);
-
-			return result;
+			return new Binary(lhs.Value + rhs.Value);
+		}
+		public static Binary operator-(Binary lhs, Binary rhs){
+			int value = (lhs.Value - rhs.Value) < 0 ? 0 : (lhs.Value - rhs.Value);
+			return new Binary(value);
+		}
+		public static Binary operator*(Binary lhs, Binary rhs){
+			int value = Math.Abs(lhs.Value * rhs.Value);
+			return new Binary(value);
+		}
+		public static Binary operator/(Binary lhs, Binary rhs){
+			int value = 0;
+			if(rhs.Value != 0)
+				value = Math.Abs(lhs.Value / rhs.Value);
+			return new Binary(value);
 		}
 
 
+		public void SetType(BinaryType type){
+			if (type > Type)
+				Type = type;
+		}
 		public void SetValue(int decValue){
 			int max = (int)Math.Pow(2, (int)Type);
 			if(decValue < max){
