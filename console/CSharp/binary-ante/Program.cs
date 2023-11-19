@@ -9,8 +9,8 @@ namespace binary_ante
 			Binary bin = new Binary(BinaryType.bin4, 0);
 			Binary bin2 = new Binary(BinaryType.bin8, 128);
 
-			Console.WriteLine(bin.toDec().ToString() + " = " + bin.ToString());
-			Console.WriteLine(bin2.toDec().ToString() + " = " + bin2.ToString());
+			Console.WriteLine(bin.ToDec().ToString() + " = " + bin.ToString());
+			Console.WriteLine(bin2.ToDec().ToString() + " = " + bin2.ToString());
 		}
 	}
 }
