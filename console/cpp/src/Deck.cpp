@@ -8,7 +8,8 @@ Deck::Deck(BinaryType type){
     deck = Binary(type);
     top = Binary((BinaryType)((int)(type)-1));
 }
-Deck::~Deck(){}
+Deck::~Deck(){
+}
 
 
 void Deck::print(){

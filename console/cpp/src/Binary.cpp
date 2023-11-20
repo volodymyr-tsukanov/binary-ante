@@ -4,6 +4,10 @@ using namespace binary;
 using namespace std;
 
 
+Binary::Binary(){
+    type = BinaryType::bin8;
+    setValue(randRange(0, pow(2, (int)type)));
+}
 Binary::Binary(BinaryType type, int dec){
     this->type = type;
     setValue(dec);
@@ -15,6 +19,8 @@ Binary::Binary(int dec){
 Binary::Binary(BinaryType type){
     this->type = type;
     setValue(randRange(0, pow(2, (int)type)));
+}
+Binary::~Binary(){
 }
 
 

@@ -1,5 +1,5 @@
 # _Binante_ console
-Simple game ; C++</br></br>
+Simple game ; C++ ; Code::Blocks</br></br>
 
 
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
