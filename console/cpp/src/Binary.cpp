@@ -41,11 +41,6 @@ Binary Binary::operator/(Binary& rhs){
 }
 
 
-int Binary::randRange(int min, int max){
-    return min + (rand() % (max+1));
-}
-
-
 void Binary::setType(BinaryType type){
     this->type = type;
 }
@@ -54,6 +49,11 @@ void Binary::setValue(int dec){
     if(dec < max){
         value = dec;
     } else value = dec % (max-1);
+}
+
+
+int Binary::randRange(int min, int max){
+    return min + (rand() % (max+1));
 }
 
 

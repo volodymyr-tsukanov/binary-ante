@@ -6,10 +6,8 @@
 #include "BinaryType.h"
 
 
-namespace binary
-{
-class Binary
-{
+namespace binary {
+class Binary {
 private:
     BinaryType type;
     int value;

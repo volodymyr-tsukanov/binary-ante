@@ -7,17 +7,22 @@
 #include "BinaryType.h"
 
 
-class Deck
-{
+namespace binaryAnte {
+class Deck {
 private:
-    binary::Binary deck;
+    int deckSize;
+    int* deck;
     binary::Binary top;
 
 public:
     Deck(binary::BinaryType type);
     ~Deck();
 
+    binary::Binary getTop();
+
+    void toss();
     void print();
 };
+}
 
 #endif // DECK_H

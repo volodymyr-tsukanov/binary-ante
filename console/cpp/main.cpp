@@ -5,20 +5,16 @@
 
 using namespace std;
 using namespace binary;
+using namespace binaryAnte;
 
 
 int main()
 {
-    Binary b = Binary(BinaryType::bin8);
-    Binary b2 = Binary(BinaryType::bin4, 2);
-    b = b + b2;
-    cout << b.toDec() << " = " << b.toString() << endl;
-    b = b - b2;
-    cout << b.toDec() << " = " << b.toString() << endl;
-    b = b * b2;
-    cout << b.toDec() << " = " << b.toString() << endl;
-    b = b / b2;
-    cout << b.toDec() << " = " << b.toString() << endl;
+    Deck deck = Deck(BinaryType::bin8);
+    for(int i = 0; i < 33; i++){
+        deck.print();
+        deck.toss();
+    }
 
     return 0;
 }
