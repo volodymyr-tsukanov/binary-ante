@@ -2,7 +2,7 @@
 name: TODO
 about: Specify and organize work that needs to be done
 title: ''
-labels: attention, TODO
+labels: help wanted, TODO
 assignees: ''
 
 ---
