@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1700514036 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
+1700514411 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
 	<iostream>
 	"Deck.h"
 	"Binary.h"
 	"BinaryType.h"
 
-1700513191 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
+1700515422 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
 	<iostream>
 	<ctime>
 	"Binary.h"

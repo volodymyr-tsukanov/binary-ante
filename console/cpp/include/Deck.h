@@ -10,14 +10,17 @@
 namespace binaryAnte {
 class Deck {
 private:
-    int deckSize;
+    int deckSize, position;
     int* deck;
     binary::Binary top;
 
 public:
-    Deck(binary::BinaryType type);
+    Deck(binary::BinaryType deckSize, binary::BinaryType topSize);
+    Deck(binary::BinaryType deckSize);
     ~Deck();
 
+    int getSize();
+    int getPosition();
     binary::Binary getTop();
 
     void toss();
