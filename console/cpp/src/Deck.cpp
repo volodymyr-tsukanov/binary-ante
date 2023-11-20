@@ -5,6 +5,7 @@ using namespace binary;
 
 
 Deck::Deck(BinaryType type){
+    srand(time(0));
     deck = Binary(type);
     top = Binary((BinaryType)((int)(type)-1));
 }

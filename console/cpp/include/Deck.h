@@ -2,6 +2,7 @@
 #define DECK_H
 
 #include <iostream>
+#include <ctime>
 #include "Binary.h"
 #include "BinaryType.h"
 

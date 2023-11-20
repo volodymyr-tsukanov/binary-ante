@@ -24,6 +24,11 @@ public:
     Binary(BinaryType type);
     ~Binary();
 
+    Binary operator+(Binary& rhs);
+    Binary operator-(Binary& rhs);
+    Binary operator*(Binary& rhs);
+    Binary operator/(Binary& rhs);
+
     void setType(BinaryType type);
     void setValue(int dec);
 
