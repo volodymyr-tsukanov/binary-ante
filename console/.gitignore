@@ -1,4 +1,5 @@
 # Extentions
 *.exe
+*.o
 *.pdb
 *.cache
