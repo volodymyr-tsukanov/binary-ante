@@ -1,5 +1,5 @@
 # Binante
-Simple game</br></br>
+Simple game ; C++ ; Code::Blocks</br></br>
 
 
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
