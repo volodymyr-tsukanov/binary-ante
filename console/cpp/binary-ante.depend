@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1700463706 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\binary.cpp
+	"Binary.h"
+
+1700463696 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binary.h
+	<iostream>
+	<cmath>
+	"BinaryType.h"
+
+1700463885 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binarytype.h
+
+1700463997 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
+	<iostream>
+	"Binary.h"
+	"BinaryType.h"
+

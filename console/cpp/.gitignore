@@ -1,6 +1,3 @@
 # Folders
-binary-ante/bin/Debug/**
-binary-ante/bin/Release/**
-
-# Extentions
-*.o
+bin/Debug/**
+bin/Release/**
