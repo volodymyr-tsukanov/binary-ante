@@ -5,31 +5,16 @@ using namespace binary;
 using namespace binaryAnte;
 
 
-Deck::Deck(BinaryType deckSize, BinaryType topSize){
+Deck::Deck(int deckSize){
+    this->deckSize = deckSize;
+
     srand(time(0));
-
-    this->deckSize = (int)deckSize;
-
-    deck = new int[this->deckSize];
-    string s = Binary(deckSize).toString();
-    for(int i = 0; i < s.length(); i++) deck[i] = (int)(s[i])-48;
-
-    if(topSize < deckSize) top = Binary(topSize);
-    else top = Binary(BinaryType::bin4);
+    deck = new Card[deckSize];
+    for(int i = 0; i < deckSize; i++) deck = new Card();
 }
-Deck::Deck(BinaryType deckSize){
-    srand(time(0));
 
-    this->deckSize = (int)deckSize;
-
-    deck = new int[deckSize];
-    string s = Binary(deckSize).toString();
-    for(int i = 0; i < s.length(); i++) deck[i] = (int)(s[i])-48;
-
-    if((int)(deckSize)/4 >= 4) top = Binary((BinaryType)((int)(deckSize)/4));
-    else top = Binary(BinaryType::bin4);
-}
 Deck::~Deck(){
+    delete [] deck;
 }
 
 
@@ -51,6 +36,6 @@ void Deck::toss(){
 
 void Deck::print(){
     cout << "Deck: ";
-    for(int i = 0; i < deckSize; i++) cout << deck[i];
+    for(int i = 0; i < deckSize; i++) cout << deck[i].toString();
     cout << "\tTop: (10)" << top.toDec() << " = (2)" << top.toString() << endl;
 }

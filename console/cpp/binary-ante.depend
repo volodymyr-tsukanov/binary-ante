@@ -1,15 +1,14 @@
 # depslib dependency file v1.0
-1700514411 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
+1700860616 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
 	<iostream>
 	"Deck.h"
 	"Binary.h"
 	"BinaryType.h"
 
-1700515422 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
+1700860251 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
 	<iostream>
 	<ctime>
-	"Binary.h"
-	"BinaryType.h"
+	"Card.h"
 
 1700512321 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binary.h
 	<iostream>
@@ -21,6 +20,12 @@
 1700512646 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\binary.cpp
 	"Binary.h"
 
-1700514204 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\deck.cpp
+1700515930 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\deck.cpp
 	"Deck.h"
+
+1700860101 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\card.h
+	<iostream>
+	<ctime>
+	"Binary.h"
+	"BinaryType.h"
 

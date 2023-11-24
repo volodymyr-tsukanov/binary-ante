@@ -22,6 +22,7 @@ Binary::Binary(BinaryType type){
     this->type = type;
     setValue(randRange(0, pow(2, (int)type)));
 }
+
 Binary::~Binary(){
 }
 

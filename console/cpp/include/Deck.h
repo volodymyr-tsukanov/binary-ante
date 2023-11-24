@@ -3,20 +3,18 @@
 
 #include <iostream>
 #include <ctime>
-#include "Binary.h"
-#include "BinaryType.h"
+#include "Card.h"
 
 
 namespace binaryAnte {
 class Deck {
 private:
     int deckSize, position;
-    int* deck;
+    Card* deck;
     binary::Binary top;
 
 public:
-    Deck(binary::BinaryType deckSize, binary::BinaryType topSize);
-    Deck(binary::BinaryType deckSize);
+    Deck(int deckSize);
     ~Deck();
 
     int getSize();
