@@ -15,6 +15,7 @@ private:
 
 public:
     Card();
+    Card(binary::BinaryType type);
     ~Card();
 
     std::string toString();

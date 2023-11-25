@@ -12,9 +12,16 @@ Deck::Deck(int deckSize){
     deck = new Card[deckSize];
     for(int i = 0; i < deckSize; i++) deck = new Card();
 }
+Deck::Deck(int deckSize, BinaryType cardType){
+    this->deckSize = deckSize;
+
+    srand(time(0));
+    deck = new Card[deckSize];
+    for(int i = 0; i < deckSize; i++) deck = new Card(cardType);
+}
 
 Deck::~Deck(){
-    delete [] deck;
+    delete deck;
 }
 
 
@@ -24,8 +31,8 @@ int Deck::getSize(){
 int Deck::getPosition(){
     return position;
 }
-Binary Deck::getTop(){
-    return top;
+Card Deck::getTop(){
+    return deck[0];
 }
 
 
@@ -36,6 +43,6 @@ void Deck::toss(){
 
 void Deck::print(){
     cout << "Deck: ";
-    for(int i = 0; i < deckSize; i++) cout << deck[i].toString();
-    cout << "\tTop: (10)" << top.toDec() << " = (2)" << top.toString() << endl;
+    for(int i = 0; i < deckSize; i++) cout << deck[i].toString() << " ";
+    cout << "\tTop: " << deck[0].toString() << endl;
 }
