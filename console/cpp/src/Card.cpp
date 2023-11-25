@@ -13,7 +13,6 @@ Card::Card(BinaryType type){
 }
 
 Card::~Card(){
-    //dtor
 }
 
 

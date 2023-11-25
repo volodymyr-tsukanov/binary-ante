@@ -10,18 +10,18 @@ Deck::Deck(int deckSize){
 
     srand(time(0));
     deck = new Card[deckSize];
-    for(int i = 0; i < deckSize; i++) deck = new Card();
+    for(int i = 0; i < deckSize; i++) deck[i] = Card();
 }
 Deck::Deck(int deckSize, BinaryType cardType){
     this->deckSize = deckSize;
 
     srand(time(0));
     deck = new Card[deckSize];
-    for(int i = 0; i < deckSize; i++) deck = new Card(cardType);
+    for(int i = 0; i < deckSize; i++) deck[i] = Card(cardType);
 }
 
 Deck::~Deck(){
-    delete deck;
+    delete[] deck;
 }
 
 
@@ -38,7 +38,7 @@ Card Deck::getTop(){
 
 void Deck::toss(){
     srand(time(0));
-    for(int i = 0; i < deckSize; i+=2) swap(deck[rand()%deckSize], deck[rand()%deckSize]);
+    for(int i = 0; i < deckSize; i+=2) swap(deck[rand()%(deckSize-1)], deck[rand()%(deckSize-1)]);
 }
 
 void Deck::print(){
