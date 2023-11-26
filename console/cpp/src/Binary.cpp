@@ -13,19 +13,32 @@ Binary::Binary(BinaryType type, int dec){
     setValue(dec);
 }
 Binary::Binary(int dec){
-    type = BinaryType::bin8;
+    int b = 4;
+    while(b <= 48 && pow(2, b) < dec) b += 4;
+    type = (BinaryType)b;
     setValue(dec);
 }
 Binary::Binary(BinaryType type){
     this->type = type;
     setValue(randRange(0, pow(2, (int)type)));
 }
+
 Binary::~Binary(){
 }
 
-
-int Binary::randRange(int min, int max){
-    return min + (rand() % (max+1));
+Binary Binary::operator+(Binary& rhs){
+    return Binary(this->value + rhs.value);
+}
+Binary Binary::operator-(Binary& rhs){
+    return Binary(this->value - rhs.value);
+}
+Binary Binary::operator*(Binary& rhs){
+    return Binary(this->value * rhs.value);
+}
+Binary Binary::operator/(Binary& rhs){
+    int val = 1;
+    if(rhs.value != 0) val = rhs.value;
+    return Binary(this->value / value);
 }
 
 
@@ -37,6 +50,11 @@ void Binary::setValue(int dec){
     if(dec < max){
         value = dec;
     } else value = dec % (max-1);
+}
+
+
+int Binary::randRange(int min, int max){
+    return min + (rand() % (max+1));
 }
 
 

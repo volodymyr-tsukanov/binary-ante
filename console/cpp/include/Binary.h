@@ -6,10 +6,8 @@
 #include "BinaryType.h"
 
 
-namespace binary
-{
-class Binary
-{
+namespace binary {
+class Binary {
 private:
     BinaryType type;
     int value;
@@ -23,6 +21,11 @@ public:
     Binary(int dec);
     Binary(BinaryType type);
     ~Binary();
+
+    Binary operator+(Binary& rhs);
+    Binary operator-(Binary& rhs);
+    Binary operator*(Binary& rhs);
+    Binary operator/(Binary& rhs);
 
     void setType(BinaryType type);
     void setValue(int dec);
