@@ -9,7 +9,7 @@
 namespace binaryAnte {
 class Deck {
 private:
-    int deckSize, position;
+    int deckSize;
     Card* deck;
 
 public:
@@ -18,11 +18,12 @@ public:
     ~Deck();
 
     int getSize();
-    int getPosition();
     Card getTop();
+    Card get(unsigned int position);
 
     void toss();
     void print();
+    void clear();
 };
 }
 

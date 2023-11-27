@@ -11,12 +11,15 @@ namespace binaryAnte{
 class Card
 {
 private:
+    long id;
     binary::Binary value;
 
 public:
     Card();
     Card(binary::BinaryType type);
     ~Card();
+
+    long getId();
 
     std::string toString();
 };

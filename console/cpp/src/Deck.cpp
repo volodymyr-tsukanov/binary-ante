@@ -28,16 +28,16 @@ Deck::~Deck(){
 int Deck::getSize(){
     return deckSize;
 }
-int Deck::getPosition(){
-    return position;
-}
+
 Card Deck::getTop(){
     return deck[0];
+}
+Card Deck::get(unsigned int position){
+    if(position < deckSize) return deck[position];
 }
 
 
 void Deck::toss(){
-    srand(time(0));
     for(int i = 0; i < deckSize; i+=2) swap(deck[rand()%(deckSize-1)], deck[rand()%(deckSize-1)]);
 }
 
@@ -45,4 +45,9 @@ void Deck::print(){
     cout << "Deck: ";
     for(int i = 0; i < deckSize; i++) cout << deck[i].toString() << " ";
     cout << "\tTop: " << deck[0].toString() << endl;
+}
+
+void Deck::clear(){
+    delete[] deck;
+    deckSize = 0;
 }
