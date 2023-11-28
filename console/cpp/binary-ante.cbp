@@ -38,10 +38,12 @@
 		<Unit filename="include/BinaryType.h" />
 		<Unit filename="include/Card.h" />
 		<Unit filename="include/Deck.h" />
+		<Unit filename="include/Identifier.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Binary.cpp" />
 		<Unit filename="src/Card.cpp" />
 		<Unit filename="src/Deck.cpp" />
+		<Unit filename="src/Identifier.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

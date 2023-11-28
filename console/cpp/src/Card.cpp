@@ -13,6 +13,10 @@ Card::Card(BinaryType type){
     id = time(0);
     value = Binary(type);
 }
+Card::Card(BinaryType type, Identifier identifier){
+    id = identifier.nextId();
+    value = Binary(type);
+}
 
 Card::~Card(){
 }

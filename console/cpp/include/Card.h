@@ -5,11 +5,11 @@
 #include <ctime>
 #include "Binary.h"
 #include "BinaryType.h"
+#include "Identifier.h"
 
 
 namespace binaryAnte{
-class Card
-{
+class Card {
 private:
     long id;
     binary::Binary value;
@@ -17,6 +17,7 @@ private:
 public:
     Card();
     Card(binary::BinaryType type);
+    Card(binary::BinaryType type, binaryAnte::Identifier identifier);
     ~Card();
 
     long getId();

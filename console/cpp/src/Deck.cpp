@@ -8,16 +8,20 @@ using namespace binaryAnte;
 Deck::Deck(int deckSize){
     this->deckSize = deckSize;
 
-    srand(time(0));
     deck = new Card[deckSize];
     for(int i = 0; i < deckSize; i++) deck[i] = Card();
 }
 Deck::Deck(int deckSize, BinaryType cardType){
     this->deckSize = deckSize;
 
-    srand(time(0));
     deck = new Card[deckSize];
     for(int i = 0; i < deckSize; i++) deck[i] = Card(cardType);
+}
+Deck::Deck(int deckSize, BinaryType cardType, Identifier identifier){
+    this->deckSize = deckSize;
+
+    deck = new Card[deckSize];
+    for(int i = 0; i < deckSize; i++) deck[i] = Card(cardType, identifier);
 }
 
 Deck::~Deck(){

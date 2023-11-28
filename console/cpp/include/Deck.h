@@ -4,6 +4,7 @@
 #include <iostream>
 #include <ctime>
 #include "Card.h"
+#include "Identifier.h"
 
 
 namespace binaryAnte {
@@ -15,6 +16,7 @@ private:
 public:
     Deck(int deckSize);
     Deck(int deckSize, binary::BinaryType cardType);
+    Deck(int deckSize, binary::BinaryType cardType, binaryAnte::Identifier identifier);
     ~Deck();
 
     int getSize();
