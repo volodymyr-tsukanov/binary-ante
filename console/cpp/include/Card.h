@@ -17,7 +17,7 @@ private:
 public:
     Card();
     Card(binary::BinaryType type);
-    Card(binary::BinaryType type, binaryAnte::Identifier identifier);
+    Card(binary::BinaryType type, binaryAnte::Identifier& identifier);
     ~Card();
 
     long getId();

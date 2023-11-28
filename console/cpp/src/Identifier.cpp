@@ -15,3 +15,6 @@ Identifier::~Identifier(){
 long Identifier::nextId(){
     return id++;
 }
+int Identifier::nextId(bool _short){
+    return (int)(id++ % 10000);
+}

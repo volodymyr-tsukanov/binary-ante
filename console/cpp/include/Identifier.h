@@ -15,6 +15,7 @@ public:
     ~Identifier();
 
     long nextId();
+    int nextId(bool _short);
 };
 }
 

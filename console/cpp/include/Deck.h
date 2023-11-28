@@ -10,13 +10,12 @@
 namespace binaryAnte {
 class Deck {
 private:
-    int deckSize;
+    int id, deckSize;
     Card* deck;
 
 public:
-    Deck(int deckSize);
-    Deck(int deckSize, binary::BinaryType cardType);
-    Deck(int deckSize, binary::BinaryType cardType, binaryAnte::Identifier identifier);
+    Deck(int deckSize, binaryAnte::Identifier& identifier);
+    Deck(int deckSize, binary::BinaryType cardType, binaryAnte::Identifier& identifier);
     ~Deck();
 
     int getSize();

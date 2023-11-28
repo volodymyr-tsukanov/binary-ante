@@ -5,19 +5,15 @@ using namespace binary;
 using namespace binaryAnte;
 
 
-Deck::Deck(int deckSize){
+Deck::Deck(int deckSize, Identifier& identifier){
+    id = identifier.nextId(true);
     this->deckSize = deckSize;
 
     deck = new Card[deckSize];
     for(int i = 0; i < deckSize; i++) deck[i] = Card();
 }
-Deck::Deck(int deckSize, BinaryType cardType){
-    this->deckSize = deckSize;
-
-    deck = new Card[deckSize];
-    for(int i = 0; i < deckSize; i++) deck[i] = Card(cardType);
-}
-Deck::Deck(int deckSize, BinaryType cardType, Identifier identifier){
+Deck::Deck(int deckSize, BinaryType cardType, Identifier& identifier){
+    id = identifier.nextId(true);
     this->deckSize = deckSize;
 
     deck = new Card[deckSize];
@@ -46,7 +42,7 @@ void Deck::toss(){
 }
 
 void Deck::print(){
-    cout << "Deck: ";
+    cout << "Deck " << id << ": ";
     for(int i = 0; i < deckSize; i++) cout << deck[i].toString() << " ";
     cout << "\tTop: " << deck[0].toString() << endl;
 }
