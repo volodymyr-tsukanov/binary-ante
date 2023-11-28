@@ -15,11 +15,14 @@ int main()
         srand(time(0));
 
         Identifier identifier = Identifier();
-        Deck deck = Deck(8, BinaryType::bin4, identifier);
-        for(int i = 0; i < 33; i++){
-            deck.print();
-            deck.toss();
-        }
+        Deck deck = Deck(10, BinaryType::bin4, identifier);
+        deck.print();
+
+        Binary bin = Binary("1111");
+        cout << bin.toDec() << " " << bin.toString() << endl;
+        Binary binr = bin.clone();
+        Binary::addOne(binr);
+        cout << binr.toDec() << " " << binr.toString() << endl;
     } catch(const exception& e){
         cout << e.what();
     }
