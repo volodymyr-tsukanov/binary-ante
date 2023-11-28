@@ -12,7 +12,7 @@
 	"Card.h"
 	"Identifier.h"
 
-1701000635 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binary.h
+1701166480 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binary.h
 	<iostream>
 	<cmath>
 	"BinaryType.h"
@@ -22,7 +22,7 @@
 1701000680 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\binary.cpp
 	"Binary.h"
 
-1701165029 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\deck.cpp
+1701165739 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\deck.cpp
 	"Deck.h"
 
 1701165049 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\card.h

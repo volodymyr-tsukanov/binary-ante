@@ -18,6 +18,13 @@ Binary::Binary(int dec){
     type = (BinaryType)b;
     setValue(dec);
 }
+Binary::Binary(string bin){
+    type = (BinaryType)bin.length();
+    value = 0;
+    for(int i = 0; i < bin.length(); i++){
+        if(bin[i] == 49) value += pow(2, i);
+    }
+}
 Binary::Binary(BinaryType type){
     this->type = type;
     setValue(randRange(0, pow(2, (int)type)));
@@ -73,4 +80,24 @@ string Binary::toString(){
     while(sBin.length() < (int)type) sBin = "0" + sBin;
 
     return sBin;
+}
+
+
+static void Binary::revert(Binary& b){
+    int number = b.value, newValue = 0;
+    for(int i = 0; i < (int)type; i++)
+        if(number%2 == 1) newValue += pow(2, i);
+        number /= 2;
+    }
+    b.setValue(newValue);
+}
+static void Binary::addOne(Binary& b){
+
+}
+
+static Binary Binary::add(Binary b1, Binary b2){
+
+}
+static Binary Binary::sub(Binary b1, Binary b2){
+
 }

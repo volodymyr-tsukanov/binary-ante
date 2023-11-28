@@ -19,6 +19,7 @@ public:
     Binary();
     Binary(BinaryType type, int dec);
     Binary(int dec);
+    Binary(std::string bin);
     Binary(BinaryType type);
     ~Binary();
 
@@ -32,6 +33,11 @@ public:
 
     int toDec();
     std::string toString();
+
+    static void revert(Binary& b);
+    static void addOne(Binary& b);
+    static Binary add(Binary b1, Binary b2);
+    static Binary sub(Binary b1, Binary b2);
 };
 }
 
