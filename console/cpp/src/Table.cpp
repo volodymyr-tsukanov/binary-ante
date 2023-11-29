@@ -16,8 +16,6 @@ Table::Table(binaryAnte::Rules& rules, binaryAnte::Identifier& identifier){
 }
 
 Table::~Table(){
-    //delete deck;
-    delete &rules;
 }
 
 

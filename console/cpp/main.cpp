@@ -1,8 +1,4 @@
-#include <iostream>
-#include "Deck.h"
-#include "Binary.h"
-#include "BinaryType.h"
-#include "Identifier.h"
+#include "Table.h"
 
 using namespace std;
 using namespace binary;
@@ -16,7 +12,9 @@ int main()
 
         Identifier identifier = Identifier();
         Deck deck = Deck(10, BinaryType::bin4, identifier);
+        Table table = Table(identifier);
         deck.print();
+        table.print();
 
         Binary bin = Binary("1111");
         cout << bin.toDec() << " " << bin.toString() << endl;

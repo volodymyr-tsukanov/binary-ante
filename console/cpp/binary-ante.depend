@@ -1,10 +1,6 @@
 # depslib dependency file v1.0
-1701207542 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
-	<iostream>
-	"Deck.h"
-	"Binary.h"
-	"BinaryType.h"
-	"Identifier.h"
+1701290840 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
+	"Table.h"
 
 1701290497 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
 	"Card.h"
@@ -46,8 +42,7 @@
 1701290554 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\table.cpp
 	"Table.h"
 
-1701290514 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\table.h
-	<iostream>
+1701290602 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\table.h
 	"Deck.h"
 	"Rules.h"
 
