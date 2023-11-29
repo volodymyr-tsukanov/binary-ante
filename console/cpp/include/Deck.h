@@ -1,10 +1,7 @@
 #ifndef DECK_H
 #define DECK_H
 
-#include <iostream>
-#include <ctime>
 #include "Card.h"
-#include "Identifier.h"
 
 
 namespace binaryAnte {

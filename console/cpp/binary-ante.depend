@@ -6,11 +6,8 @@
 	"BinaryType.h"
 	"Identifier.h"
 
-1701165741 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
-	<iostream>
-	<ctime>
+1701290497 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
 	"Card.h"
-	"Identifier.h"
 
 1701208048 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binary.h
 	<iostream>
@@ -22,12 +19,10 @@
 1701208077 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\binary.cpp
 	"Binary.h"
 
-1701165739 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\deck.cpp
+1701290521 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\deck.cpp
 	"Deck.h"
 
-1701165049 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\card.h
-	<iostream>
-	<ctime>
+1701290572 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\card.h
 	"Binary.h"
 	"BinaryType.h"
 	"Identifier.h"
@@ -42,8 +37,17 @@
 	<iostream>
 	<ctime>
 
-1701289399 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\rules.cpp
+1701289784 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\rules.cpp
 	"Rules.h"
 
-1701289399 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\rules.h
+1701289734 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\rules.h
+	<iostream>
+
+1701290554 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\table.cpp
+	"Table.h"
+
+1701290514 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\table.h
+	<iostream>
+	"Deck.h"
+	"Rules.h"
 

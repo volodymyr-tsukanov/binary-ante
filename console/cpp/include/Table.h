@@ -1,7 +1,6 @@
 #ifndef TABLE_H
 #define TABLE_H
 
-#include <iostream>
 #include "Deck.h"
 #include "Rules.h"
 
@@ -11,7 +10,7 @@ class Table {
 private:
     int id;
     Rules rules;
-    Deck deck;
+    //Deck deck;
 
 public:
     Table(binaryAnte::Identifier& identifier);

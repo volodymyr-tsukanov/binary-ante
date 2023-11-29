@@ -1,8 +1,6 @@
 #ifndef CARD_H
 #define CARD_H
 
-#include <iostream>
-#include <ctime>
 #include "Binary.h"
 #include "BinaryType.h"
 #include "Identifier.h"
