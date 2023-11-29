@@ -18,6 +18,13 @@ Binary::Binary(int dec){
     type = (BinaryType)b;
     setValue(dec);
 }
+Binary::Binary(string bin){
+    type = (BinaryType)bin.length();
+    value = 0;
+    for(int i = 0; i < bin.length(); i++){
+        if(bin[i] == 49) value += pow(2, bin.length()-1-i);
+    }
+}
 Binary::Binary(BinaryType type){
     this->type = type;
     setValue(randRange(0, pow(2, (int)type)));
@@ -43,13 +50,16 @@ Binary Binary::operator/(Binary& rhs){
 
 
 void Binary::setType(BinaryType type){
-    this->type = type;
+    if((int)type > (int)this->type) this->type = type;
 }
-void Binary::setValue(int dec){
+void Binary::setValue(int dec, bool enlarge){
     int max = pow(2, (int)type);
     if(dec < max){
         value = dec;
-    } else value = dec % (max-1);
+    } else {
+        if(enlarge) {}
+        else value = dec % (max-1);
+    }
 }
 
 
@@ -73,4 +83,8 @@ string Binary::toString(){
     while(sBin.length() < (int)type) sBin = "0" + sBin;
 
     return sBin;
+}
+
+Binary& Binary::clone(){
+    return *(new Binary(type, value));
 }

@@ -1,34 +1,48 @@
 # depslib dependency file v1.0
-1700935371 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
-	<iostream>
-	"Deck.h"
-	"Binary.h"
-	"BinaryType.h"
+1701290840 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\main.cpp
+	"Table.h"
 
-1700905606 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
-	<iostream>
-	<ctime>
+1701290497 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\deck.h
 	"Card.h"
 
-1700512321 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binary.h
+1701208048 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binary.h
 	<iostream>
 	<cmath>
 	"BinaryType.h"
 
-1700905241 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binarytype.h
+1701000647 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\binarytype.h
 
-1700935758 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\binary.cpp
+1701208077 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\binary.cpp
 	"Binary.h"
 
-1700934501 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\deck.cpp
+1701290521 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\deck.cpp
 	"Deck.h"
 
-1700904456 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\card.h
-	<iostream>
-	<ctime>
+1701290572 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\card.h
 	"Binary.h"
 	"BinaryType.h"
+	"Identifier.h"
 
-1700934638 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\card.cpp
+1701165062 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\card.cpp
 	"Card.h"
+
+1701165554 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\identifier.cpp
+	"Identifier.h"
+
+1701165180 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\identifier.h
+	<iostream>
+	<ctime>
+
+1701289784 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\rules.cpp
+	"Rules.h"
+
+1701289734 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\rules.h
+	<iostream>
+
+1701290554 source:c:\users\vladimr\desktop\git\binary-ante\console\cpp\src\table.cpp
+	"Table.h"
+
+1701290602 c:\users\vladimr\desktop\git\binary-ante\console\cpp\include\table.h
+	"Deck.h"
+	"Rules.h"
 
