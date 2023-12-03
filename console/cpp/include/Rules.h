@@ -1,15 +1,5 @@
-#ifndef RULES_H
-#define RULES_H
+#pragma once
 
-#include <iostream>
-
-
-namespace binaryAnte {
-class Rules {
-public:
-    Rules();
-    ~Rules();
-};
+namespace binary {
+    enum class Rules { NOT_SET = 0, DEFAULT = 66 };
 }
-
-#endif // RULES_H

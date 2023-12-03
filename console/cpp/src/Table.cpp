@@ -7,12 +7,12 @@ using namespace binaryAnte;
 Table::Table(binaryAnte::Identifier& identifier){
     id = identifier.nextId(true);
     rules = Rules();
-    //deck = Deck();
+    deck = Deck();
 }
 Table::Table(binaryAnte::Rules& rules, binaryAnte::Identifier& identifier){
     id = identifier.nextId(true);
     rules = rules;
-    //deck = Deck();
+    deck = Deck();
 }
 
 Table::~Table(){
