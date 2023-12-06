@@ -5,13 +5,10 @@ namespace VT.BinaryAnte
 {
 	public class Deck
 	{
-		private Binary deck, top;
+		private int id;
 
 
 		public Deck (BinaryType type){
-			deck = new Binary(type);
-			top = new Binary((BinaryType)((int)(type)-1));
 		}
 	}
 }
-

@@ -36,8 +36,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Deck.cs" />
-    <Compile Include="Types.cs" />
+    <Compile Include="BinaryAnte\Deck.cs" />
+    <Compile Include="Types\Binary.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="BinaryAnte\" />
+    <Folder Include="Types\" />
+  </ItemGroup>
 </Project>
