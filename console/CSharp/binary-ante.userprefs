@@ -1,9 +1,14 @@
 ﻿<Properties StartupItem="binary-ante\binary-ante.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="binary-ante\Properties\AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="binary-ante\BinaryAnte\Table.cs">
     <Files>
-      <File FileName="binary-ante\Program.cs" Line="2" Column="1" />
-      <File FileName="binary-ante\Properties\AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="binary-ante\Properties\AssemblyInfo.cs" Line="27" Column="1" />
+      <File FileName="binary-ante\Program.cs" Line="17" Column="21" />
+      <File FileName="binary-ante\BinaryAnte\Deck.cs" Line="52" Column="34" />
+      <File FileName="binary-ante\BinaryAnte\Card.cs" Line="5" Column="2" />
+      <File FileName="binary-ante\BinaryAnte\Identifier.cs" Line="5" Column="15" />
+      <File FileName="binary-ante\BinaryAnte\Rule.cs" Line="13" Column="1" />
+      <File FileName="binary-ante\BinaryAnte\Table.cs" Line="14" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

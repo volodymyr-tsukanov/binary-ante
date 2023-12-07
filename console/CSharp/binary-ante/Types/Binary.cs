@@ -34,6 +34,13 @@ namespace VT.Types.Binary
 			this.Type = type;
 			SetValue(decValue);
 		}
+		public Binary(String bin){
+			Type = (BinaryType) bin.Length;
+			Value = 0;
+			for(int i = 0; i < bin.Length; i++){
+				if(bin[i] == 49) Value += (int)Math.Pow(2, bin.Length-1-i);
+			}
+		}
 
 		public static Binary operator+(Binary lhs, Binary rhs){
 			return new Binary(lhs.Value + rhs.Value);
@@ -58,11 +65,15 @@ namespace VT.Types.Binary
 			if (type > Type)
 				Type = type;
 		}
-		public void SetValue(int decValue){
+		public void SetValue(int decValue, bool enlarge = false){
 			int max = (int)Math.Pow(2, (int)Type);
-			if(decValue < max){
+			if (decValue < max) {
 				Value = decValue;
-			} else Value = decValue % (max-1);
+			} else {
+				if (enlarge) {
+				} else
+					Value = decValue % (max - 1);
+			}
 		}
 
 
@@ -86,6 +97,28 @@ namespace VT.Types.Binary
 
 			return s;
 		}
+
+
+		static void Reverse(Binary b){
+			int number = b.Value, newValue = 0;
+			for(int i = 0; i < (int)b.Type; i++){
+				if(number%2 == 1) newValue += (int)Math.Pow(2, (int)(b.Type)-1-i);
+				number /= 2;
+			}
+			b.SetValue(newValue);
+		}
+		static void Revert(Binary b){
+			int number = b.Value, newValue = 0;
+			for(int i = 0; i < (int)b.Type; i++){
+				if(number%2 == 0) newValue += (int)Math.Pow(2, i);
+				number /= 2;
+			}
+			b.SetValue(newValue);
+		}
+		static void AddOne(Binary b){
+			b.SetValue(b.Value+1, true);
+		}
+		static Binary Add(Binary b1, Binary b2){return null;}
+		static Binary Sub(Binary b1, Binary b2){return null;}
 	}
 }
-
