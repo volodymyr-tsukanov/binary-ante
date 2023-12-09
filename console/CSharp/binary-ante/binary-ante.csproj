@@ -43,10 +43,12 @@
     <Compile Include="BinaryAnte\Table.cs" />
     <Compile Include="BinaryAnte\Card.cs" />
     <Compile Include="BinaryAnte\Player.cs" />
+    <Compile Include="Utils\Saver.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="BinaryAnte\" />
     <Folder Include="Types\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
 </Project>

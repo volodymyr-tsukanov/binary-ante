@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using VT.Utils;
 
 namespace VT.BinaryAnte
 {
@@ -48,6 +50,17 @@ namespace VT.BinaryAnte
 			Console.Write("Table " + Id + ":{\n ");
 			deck.Print();
 			Console.WriteLine("}");
+		}
+
+
+		public class Converter : Saver.SaveInstance {
+			public List<string> To(Object data){
+				return null;
+			}
+
+			public Object From(List<string> data){
+				return null;
+			}
 		}
 	}
 }
