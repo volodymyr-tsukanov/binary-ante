@@ -5,17 +5,17 @@ namespace VT.BinaryAnte
 {
 	public class Card
 	{
-		private long Id;
+		private int Id;
 		private Binary Value;
 
 
-		public Card(BinaryType type){
-			Id = new Identifier().NextId();
-			Value = new Binary(type);
+		public Card(Identifier identifier){
+			Id = identifier.NextId(Identifier.SIZE.LARGE);
+			Value = new Binary(Id);
 		}
 		public Card(BinaryType type, Identifier identifier){
-			Id = identifier.NextId();
-			Value = new Binary(type);
+			Id = identifier.NextId(Identifier.SIZE.LARGE);
+			Value = new Binary(Id, type);
 		}
 
 

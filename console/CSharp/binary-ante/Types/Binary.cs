@@ -7,19 +7,24 @@ namespace VT.Types.Binary
 
 	public class Binary
 	{
-		private BinaryType Type;
-		private int Value;
+		BinaryType Type;
+		int Value;
+
+		protected int seed;
 
 
-		public Binary(){
+		public Binary(int seed){
+			this.seed = seed;
 			Type = BinaryType.bin8;
 			SetValue(RandRange(0, (int)Math.Pow(2, (int)Type)));
 		}
-		public Binary(BinaryType type){
+		public Binary(int seed, BinaryType type){
+			this.seed = seed;
 			this.Type = type;
 			SetValue(RandRange(0, (int)Math.Pow(2, (int)type)));
 		}
-		public Binary(int value){
+		public Binary(int seed, int value){
+			this.seed = seed;
 			int b = 4;
 			while (b <= 48) {
 				if (value < (int) Math.Pow(2, b))
@@ -78,7 +83,7 @@ namespace VT.Types.Binary
 
 
 		int RandRange(int min, int max){
-			return new Random().Next(min, max);
+			return new Random(seed).Next(min, max);
 		}
 
 		public int ToDec(){

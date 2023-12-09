@@ -38,10 +38,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BinaryAnte\Deck.cs" />
     <Compile Include="Types\Binary.cs" />
-    <Compile Include="BinaryAnte\Card.cs" />
     <Compile Include="BinaryAnte\Identifier.cs" />
     <Compile Include="BinaryAnte\Rule.cs" />
     <Compile Include="BinaryAnte\Table.cs" />
+    <Compile Include="BinaryAnte\Card.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

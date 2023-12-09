@@ -10,12 +10,12 @@ namespace VT.BinaryAnte
 
 
 		public Deck(int deckSize, Identifier identifier){
-			Id = identifier.NextId(true);
+			Id = identifier.NextId(Identifier.SIZE.SMALL);
 			deck = new Card[deckSize];
-			//for(int i = 0; i < deckSize; i++) deck[i] = new Card();
+			for(int i = 0; i < deckSize; i++) deck[i] = new Card(identifier);
 		}
 		public Deck(int deckSize, BinaryType cardType, Identifier identifier){
-			Id = identifier.NextId(true);
+			Id = identifier.NextId(Identifier.SIZE.NORMAL);
 			deck = new Card[deckSize];
 			for(int i = 0; i < deckSize; i++) deck[i] = new Card(cardType, identifier);
 		}
@@ -47,9 +47,9 @@ namespace VT.BinaryAnte
 		}
 
 		public void Print(){
-			Console.Write("Deck " + Id + ": ");
+			Console.Write("Deck " + Id + ":{ ");
 			for(int i = 0; i < deck.Length; i++) Console.Write(deck[i].ToString() + " ");
-			Console.WriteLine("\tTop: " + deck[0].ToString());
+			Console.WriteLine("\tTop: " + deck[0].ToString() + "}");
 		}
 
 		public void Clear(){
