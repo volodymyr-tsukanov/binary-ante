@@ -103,8 +103,14 @@ namespace VT.Types.Binary
 			return s;
 		}
 
+		public Binary Clone(){
+			Binary binary = new Binary(Type, Value);
 
-		static void Reverse(Binary b){
+			return binary;
+		}
+
+
+		public static void Reverse(Binary b){
 			int number = b.Value, newValue = 0;
 			for(int i = 0; i < (int)b.Type; i++){
 				if(number%2 == 1) newValue += (int)Math.Pow(2, (int)(b.Type)-1-i);
@@ -112,7 +118,7 @@ namespace VT.Types.Binary
 			}
 			b.SetValue(newValue);
 		}
-		static void Revert(Binary b){
+		public static void Revert(Binary b){
 			int number = b.Value, newValue = 0;
 			for(int i = 0; i < (int)b.Type; i++){
 				if(number%2 == 0) newValue += (int)Math.Pow(2, i);
@@ -120,10 +126,10 @@ namespace VT.Types.Binary
 			}
 			b.SetValue(newValue);
 		}
-		static void AddOne(Binary b){
+		public static void AddOne(Binary b){
 			b.SetValue(b.Value+1, true);
 		}
-		static Binary Add(Binary b1, Binary b2){return null;}
-		static Binary Sub(Binary b1, Binary b2){return null;}
+		public static Binary Add(Binary b1, Binary b2){return null;}
+		public static Binary Sub(Binary b1, Binary b2){return null;}
 	}
 }

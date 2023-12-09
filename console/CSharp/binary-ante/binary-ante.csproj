@@ -42,6 +42,7 @@
     <Compile Include="BinaryAnte\Rule.cs" />
     <Compile Include="BinaryAnte\Table.cs" />
     <Compile Include="BinaryAnte\Card.cs" />
+    <Compile Include="BinaryAnte\Player.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

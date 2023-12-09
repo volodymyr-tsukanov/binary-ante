@@ -7,12 +7,13 @@ namespace VT.BinaryAnte
 		int Id;
 		Rules rules;
 		Deck deck;
+		Player[] players;
 
 		protected Identifier identifier;
 
 
 		public Table(Identifier identifier){
-			Id = identifier.NextId(Identifier.SIZE.TINY);
+			Id = identifier.NextId(Identifier.SIZE.SMALL);
 			rules = Rules.DEFAULT;
 			this.identifier = identifier;
 			Initialize();
@@ -22,6 +23,14 @@ namespace VT.BinaryAnte
 			this.rules = rules;
 			this.identifier = identifier;
 			Initialize();
+		}
+
+
+		public int GetId(){
+			return Id;
+		}
+		public Identifier GetIdentifier(){
+			return identifier;
 		}
 
 

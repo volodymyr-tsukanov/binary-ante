@@ -5,12 +5,12 @@ namespace VT.BinaryAnte
 {
 	public class Deck
 	{
-		private int Id;
-		private Card[] deck;
+		int Id;
+		Card[] deck;
 
 
 		public Deck(int deckSize, Identifier identifier){
-			Id = identifier.NextId(Identifier.SIZE.SMALL);
+			Id = identifier.NextId(Identifier.SIZE.NORMAL);
 			deck = new Card[deckSize];
 			for(int i = 0; i < deckSize; i++) deck[i] = new Card(identifier);
 		}
@@ -20,6 +20,10 @@ namespace VT.BinaryAnte
 			for(int i = 0; i < deckSize; i++) deck[i] = new Card(cardType, identifier);
 		}
 
+
+		public int GetId(){
+			return Id;
+		}
 
 		public int GetSize(){
 			return deck.Length;

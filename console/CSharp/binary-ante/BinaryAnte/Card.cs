@@ -5,12 +5,12 @@ namespace VT.BinaryAnte
 {
 	public class Card
 	{
-		private int Id;
-		private Binary Value;
+		int Id;
+		Binary Value;
 
 
 		public Card(Identifier identifier){
-			Id = identifier.NextId(Identifier.SIZE.LARGE);
+			Id = identifier.NextId(Identifier.SIZE.HUGE2);
 			Value = new Binary(Id);
 		}
 		public Card(BinaryType type, Identifier identifier){
@@ -19,8 +19,11 @@ namespace VT.BinaryAnte
 		}
 
 
-		long GetId(){
+		public int GetId(){
 			return Id;
+		}
+		public Binary GetValue(){
+			return Value.Clone();
 		}
 
 
